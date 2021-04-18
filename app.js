@@ -1,11 +1,6 @@
-// Modules
-// CommonJS, every file is module by defautl
-// Modules - Encapsulated code, only share minimum
+const _ = require('lodash');
 
-const names = require('./4-names')
-const sayHi = require('./5-utils')
-const data = require('./6-alternativr-flavor')
+const items = [1, [2, [3, [4]]]];
 
-sayHi('susan')
-sayHi(names.john)
-sayHi(names.peter)
+const newItems = _.flattenDeep(items);
+console.log(newItems);

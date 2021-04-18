@@ -1,6 +1,6 @@
 module.exports.items = ['item1' , 'item2']
 
-conts person = {
+const person = {
   name: 'bob',
 }
 
